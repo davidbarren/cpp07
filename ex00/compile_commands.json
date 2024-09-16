@@ -1,0 +1,20 @@
+[
+ {
+  "directory": "/home/dbarrene/Documents/42Cursus/Personal_Git/cpp07/ex00",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "-pedantic",
+   "-g",
+   "-I",
+   "includes",
+   "-c",
+   "srcs/main.cpp",
+   "-o",
+   "obj/main.o"
+  ],
+  "file": "srcs/main.cpp"
+ }
+]
