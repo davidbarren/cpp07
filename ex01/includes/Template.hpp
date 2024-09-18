@@ -6,7 +6,7 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:49:03 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/09/16 17:07:28 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/09/18 11:16:54 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,23 @@
 #define TEMPLATE_HPP
 #include <cstddef>
 
+template<typename T, typename F>
+void	iter(T* address, size_t len, F function)
+{
+	for(size_t i = 0; i < len; i++)
+		function(address[i]);
+}
+
 template<typename T>
-void	iter(T* address, size_t len, // throw a functor in there somewhere?
+void	add(T& type)
+{
+	type += 1;
+}
 
-
+template<typename T>
+void	subtract(T& type)
+{
+	type -= 1;
+}
 
 #endif
